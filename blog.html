@@ -12,7 +12,7 @@
 <body>
     <header class="header padding-1">
         <div class="container flex-general">
-            <a class="brand">Flexor</a>
+            <a class="brand" href="index.html">Flexor</a>
             <label class="bars" for="toggle">
                 <i class="fas fa-bars"></i>
             </label>
@@ -36,13 +36,13 @@
         <section class="blog-section">
             <div class="blog-heading-section">
                 <div class="container">
-                    <span><a>Home</a> / Blog</span>
-                    <h2>Blog</h2>
+                    <span class="blog-heading-top"><a href="#">Home</a> / Blog</span>
+                    <h2 class="blog-heading-2">Blog</h2>
                 </div>
             </div>
             <div class="blog-content-section">
                 <div class="container">
-                    <section class="flex justify-content-sp-btw">
+                    <section class="flex justify-content-sp-btw flex-wrap">
                         <div class="blog-articles-section flex-65">
                             <article class="blog-article-col-1 ">
                                 <div class="article-image-box">
@@ -126,92 +126,101 @@
                             </article>
                         </div>
                         <aside class="aside-section flex-30">
-                            <article>
-                                <h2 class="aside-heading padding-bottom-2">Search</h2>
-                                <div class="search-box flex">
-                                    <input type="name" class="flex-90"/>
-                                    <a class="search-button flex-general"><i class="fas fa-search"></i></a>
+                            <div class="aside-wrapper">
+                                <article>
+                                    <h2 class="aside-heading padding-bottom-2">Search</h2>
+                                    <div class="search-box flex">
+                                        <input type="name" class="flex-90"/>
+                                        <a class="search-button flex-general"><i class="fas fa-search"></i></a>
+                                    </div>
+                                </article>
+                                <div>
+                                    <h2 class="aside-heading padding-2">Categories</h2>
+                                    <nav class="padding-bottom-2">
+                                        <ul class="aside-nav">
+                                            <li class="padding-bottom-1"><a>General<span> (25)</span></a></li>
+                                            <li class="padding-bottom-1"><a>Lifestyle<span> (12)</span></a></li>
+                                            <li class="padding-bottom-1"><a>Travel<span> (5)</span></a></li>
+                                            <li class="padding-bottom-1"><a>Design<span> (22)</span></a></li>
+                                            <li class="padding-bottom-1"><a>Creative<span> (8)</span></a></li>
+                                            <li class="padding-bottom-1"><a>Education<span> (14)</span></a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
-                            </article>
-                            <div>
-                                <h2 class="aside-heading padding-2">Categories</h2>
-                                <nav class="padding-bottom-2">
-                                    <ul>
-                                        <li class="padding-bottom-1"><a>General<span> (25)</span></a></li>
-                                        <li class="padding-bottom-1"><a>Lifestyle<span> (12)</span></a></li>
-                                        <li class="padding-bottom-1"><a>Travel<span> (5)</span></a></li>
-                                        <li class="padding-bottom-1"><a>Design<span> (22)</span></a></li>
-                                        <li class="padding-bottom-1"><a>Creative<span> (8)</span></a></li>
-                                        <li class="padding-bottom-1"><a>Education<span> (14)</span></a></li>
-                                    </ul>
-                                </nav>
+                                <section class="recent-posts">
+                                    <h2 class="aside-heading padding-bottom-2">Recent Posts</h2>
+                                    <article class="flex-general padding-bottom-1">
+                                        <div class="recent-post-image flex-30 align-self-stretch">
+                                            <img src="./media/blog-recent-1.jpg" alt="two developers"/>
+                                        </div>
+                                        <div class="flex-65 align-self-stretch">
+                                            <h3 class="padding-bottom-half special-heading">Nihil blanditiis at in nihil autem</h3>
+                                            <span class="recentpost-date">Jan 1, 2020</span>
+                                        </div>
+                                    </article>
+                                    <article class="flex-general padding-bottom-1">
+                                        <div class="recent-post-image flex-30 align-self-stretch">
+                                            <img src="./media/blog-recent-2.jpg" alt="two girls"/>
+                                        </div>
+                                        <div class="flex-65 align-self-stretch">
+                                            <h3 class="padding-bottom-half special-heading">Quidem autem et impedit</h3>
+                                            <span class="recentpost-date">Jan 1, 2020</span>
+                                        </div>
+                                    </article>
+                                    <article class="flex-general padding-bottom-1">
+                                        <div class="recent-post-image flex-30 align-self-stretch">
+                                            <img src="./media/blog-recent-3.jpg" alt="Girl with phone"/>
+                                        </div>
+                                        <div class="flex-65 align-self-stretch">
+                                            <h3 class="padding-bottom-half special-heading">Id quia et et ut maxime similique occaecati ut</h3>
+                                            <span class="recentpost-date">Jan 1, 2020</span>
+                                        </div>
+                                    </article>
+                                    <article class="flex-general padding-bottom-1">
+                                        <div class="recent-post-image flex-30 align-self-stretch">
+                                            <img src="./media/blog-recent-4.jpg" alt="Library"/>
+                                        </div>
+                                        <div class="flex-65 align-self-stretch">
+                                            <h3 class="padding-bottom-half special-heading">Laborum corporis quo dara net para</h3>
+                                            <span class="recentpost-date">Jan 1, 2020</span>
+                                        </div>
+                                    </article>
+                                    <article class="flex-general padding-bottom-1">
+                                        <div class="recent-post-image flex-30 align-self-stretch">
+                                            <img src="./media/blog-recent-5.jpg" alt="Developers"/>
+                                        </div>
+                                        <div class="flex-65 align-self-stretch">
+                                            <h3 class="padding-bottom-half special-heading">Et dolores corrupti quae illo quod dolor</h3>
+                                            <span class="recentpost-date">Jan 1, 2020</span>
+                                        </div>
+                                    </article>
+                                </section>
+                                <div class="tags">
+                                    <h2 class="aside-heading padding-2">Tags</h2>
+                                    <span>App</span>
+                                    <span>IT</span>
+                                    <span>Business</span>
+                                    <span>Mac</span>
+                                    <span>Design</span>
+                                    <span>Office</span>
+                                    <span>Creative</span>
+                                    <span>Studio</span>
+                                    <span>Smart</span>
+                                    <span>Tips</span>
+                                    <span>Marketing</span>
+                                </div>    
                             </div>
-                            <section>
-                                <h2 class="aside-heading padding-bottom-2">Recent Posts</h2>
-                                <article class="flex-general padding-bottom-1">
-                                    <div class="recent-post-image flex-30 align-self-stretch">
-                                        <img src="./media/blog-recent-1.jpg" alt="two developers"/>
-                                    </div>
-                                    <div class="flex-65 align-self-stretch">
-                                        <h3 class="padding-bottom-half special-heading">Nihil blanditiis at in nihil autem</h3>
-                                        <date>Jan 1, 2020</date>
-                                    </div>
-                                </article>
-                                <article class="flex-general padding-bottom-1">
-                                    <div class="recent-post-image flex-30 align-self-stretch">
-                                        <img src="./media/blog-recent-2.jpg" alt="two girls"/>
-                                    </div>
-                                    <div class="flex-65 align-self-stretch">
-                                        <h3 class="padding-bottom-half special-heading">Quidem autem et impedit</h3>
-                                        <date>Jan 1, 2020</date>
-                                    </div>
-                                </article>
-                                <article class="flex-general padding-bottom-1">
-                                    <div class="recent-post-image flex-30 align-self-stretch">
-                                        <img src="./media/blog-recent-3.jpg" alt="Girl with phone"/>
-                                    </div>
-                                    <div class="flex-65 align-self-stretch">
-                                        <h3 class="padding-bottom-half special-heading">Id quia et et ut maxime similique occaecati ut</h3>
-                                        <date>Jan 1, 2020</date>
-                                    </div>
-                                </article>
-                                <article class="flex-general padding-bottom-1">
-                                    <div class="recent-post-image flex-30 align-self-stretch">
-                                        <img src="./media/blog-recent-4.jpg" alt="Library"/>
-                                    </div>
-                                    <div class="flex-65 align-self-stretch">
-                                        <h3 class="padding-bottom-half special-heading">Laborum corporis quo dara net para</h3>
-                                        <date>Jan 1, 2020</date>
-                                    </div>
-                                </article>
-                                <article class="flex-general padding-bottom-1">
-                                    <div class="recent-post-image flex-30 align-self-stretch">
-                                        <img src="./media/blog-recent-5.jpg" alt="Developers"/>
-                                    </div>
-                                    <div class="flex-65 align-self-stretch">
-                                        <h3 class="padding-bottom-half special-heading">Et dolores corrupti quae illo quod dolor</h3>
-                                        <date>Jan 1, 2020</date>
-                                    </div>
-                                </article>
-                            </section>
-                            <div class="tags">
-                                <h2 class="aside-heading padding-2">Tags</h2>
-                                <span>App</span>
-                                <span>IT</span>
-                                <span>Business</span>
-                                <span>Mac</span>
-                                <span>Design</span>
-                                <span>Office</span>
-                                <span>Creative</span>
-                                <span>Studio</span>
-                                <span>Smart</span>
-                                <span>Tips</span>
-                                <span>Marketing</span>
-
-                            </div>
-                           
                         </aside>
                     </section>
+                </div>
+            </div>
+        </section>
+        <section class="pagination-section">
+            <div class="container">
+                <div class="page-number flex">
+                    <div>1</div>
+                    <div class="active-button">2</div>
+                    <div>3</div>
                 </div>
             </div>
         </section>
